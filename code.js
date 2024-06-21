@@ -1,4 +1,3 @@
-# JSProoofAssessment1
 // Step 1: Create a variable to hold your NFTs
 const nftsDetails = [];
 
