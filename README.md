@@ -1,10 +1,12 @@
 # JSProoofAssessment1
 // Step 1: Create a variable to hold your NFTs
+// this varibale will be an array and it will store the NFTs
 const nftsDetails = [];
 
 // Step 2: This function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata,
 // and store it in the variable above.
+// Here we created a function called mintNFT which holds all the metadata 
 function mintNFT(nftName, creator, YearOfPublish, detail) {
     const nft = {
         nftName: nftName,
@@ -17,6 +19,7 @@ function mintNFT(nftName, creator, YearOfPublish, detail) {
 
 // Step 3: Create a "loop" that will go through an "array" of NFTs
 // and print their metadata with console.log()
+// Here we have created a function called listNFTS which will include a loop and that loop will print the metadata
 function listNFTs() {
     let i = 0;
     do {
@@ -30,6 +33,7 @@ function listNFTs() {
     } while (i < nftsDetails.length);
 }
 // Step 4: Print the total number of NFTs we have minted to the console
+// here we have created a function called getTotalSupply which will return the total number of NFTS using the length() function
 function getTotalSupply() {
     return nftsDetails.length;
 }
